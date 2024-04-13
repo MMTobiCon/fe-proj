@@ -1,4 +1,17 @@
+:root{
+    --primary: #3B2002;
+    --secondary: #F89F3A;
+    --surface: #FCD9B0;
+    --surface2: #FEF5EB;
+    --text:#1d1001;
+}
 *{
     margin: 0px;
     box-sizing: border-box;
+}
+body{
+    background: var(--surface2);
+}
+h1{
+    color: var(--text);
 }
