@@ -3,35 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" />
     <title>Order Page</title>
-    <script src="./index.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    ></script>
+    <script type="text/javascript" src="order.js">
+      $("p").mouse
+    </script>
   </head>
   <body>
     <nav class="navigation-container">
       <ul class="navigation-wrapper">
-        <li> <a href="/">Home</a> </li>
+        <li><a href="/">Home</a></li>
         <li>
           <a href="./pages/About.html">About</a>
         </li>
         <li>
-            <a href="./pages/checkout.html">Cart-Logo</a>
+          <a href="./pages/checkout.html">Cart-Logo</a>
         </li>
       </ul>
     </nav>
     <h1>Conestoga</h1>
     <h1>Logo</h1>
-    <hr>
+    <hr />
     <h2>Menu</h2>
     <p>Select an Item to add to your order</p>
     <div class="product_container">
-        <article class="product_card">
+      <!-- <article class="product_card">
             <img src="./Assets/shop/americano.jpeg" alt="americano">
-            <p>Item 1</p>
-        </article>
+            <div class="description">
 
-        </article>
-
+                <h3>Americano:</h3>
+                <p>This is a kind of coffee that is kind of really weird in taste a bit</p>
+                <p class="price">$3.5</p>
+            </div>
+        </article> -->
     </div>
+    <section class="order-section">
+      <h1>Your Orders</h1>
+      <p>All your selected items appear here</p>
+      <div class="order_container">
+        <ol class="order_list">
+          <!-- <li> -->
+            <!-- <p>$3.25 - Cappuccino</p>  -->
+          <!-- </li> -->
+        </ol>
+      </div>
+      <h1 id="total">Total: <span></span></h1>
+      <div class="order_buttons">
+
+        <button>
+          
+          <a href="/pages/checkout.html">Place Order</a>
+        </button>
+        <button id="clear">
+          Clear Order
+        </button>
+      </div>
+    </section>
   </body>
 </html>
