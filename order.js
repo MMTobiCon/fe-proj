@@ -9,21 +9,61 @@ $(document).ready(function(){
             name: "Americano",
             price:3.5,
             description: "a really weird coffee i somehow like idk ",
-            image:"./Assets/shop/americano.jpeg",
-            rollover: "./Assets/shop/americano2.jpg"
+            image:"./Assets/shop/coffee1dark.png",
+            rollover: "./Assets/shop/coffee1light.png"
     
     
     },
         {
             id: 2,
-            name: "cappuccino",
+            name: "Cappuccino",
             price:4.6,
             description: "Odd tasting delight, meant for the original tech bros, having a mid life crisis coffee i somehow like idk ",
-            image:"./Assets/shop/cappuccino.jpeg",
-            rollover: "./Assets/shop/cappuccino2.jpg"
+            image:"./Assets/shop/cake1dark.png",
+            rollover: "./Assets/shop/cake1light.png"
     
     
     },
+    
+    {
+        id: 3,
+        name: "Bread",
+        price:0.6,
+        description: "Odd tasting delight, meant for the original tech bros",
+        image:"./Assets/shop/coffee2dark.png",
+        rollover: "./Assets/shop/coffee2light.png"
+    },
+    
+    {
+        id: 4,
+        name: "Americano",
+        price:3.5,
+        description: "a really weird coffee i somehow like idk ",
+        image:"./Assets/shop/coffee3dark.png",
+        rollover: "./Assets/shop/coffee3light.png"
+
+
+},
+    {
+        id: 5,
+        name: "Cappuccino",
+        price:4.6,
+        description: "Odd tasting delight, meant for the original tech bros, having a mid life crisis coffee i somehow like idk ",
+        image:"./Assets/shop/cake2dark.png",
+        rollover: "./Assets/shop/cake2light.png"
+
+
+},
+
+{
+    id: 6,
+    name: "Bread",
+    price:0.6,
+    description: "Odd tasting delight, meant for the original tech bros",
+    image:"./Assets/shop/coffee4dark.png",
+    rollover: "./Assets/shop/coffee4light.png"
+},
+
     
     ]
 
