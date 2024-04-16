@@ -96,6 +96,14 @@ h1{
     transform: translate(-50%);
 }
 
+.order_item{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 52px;
+}
+
 @media (min-width: 600px) {
     .product_card { grid-template-columns: repeat(2, 1fr);}
     .product_container { grid-template-columns: repeat(2, 1fr);}

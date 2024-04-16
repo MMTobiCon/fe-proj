@@ -2,6 +2,20 @@
 
 document.addEventListener('DOMContentLoaded', 
 function() {
+
+// Grab orders from session Storage
+    const products =  JSON.parse(localStorage.getItem("orders"))
+    const total = localStorage.getItem("Total")
+    for (let product of products){
+
+          $("#item_container").append(
+           ` <p>${product.name} <span class="price">${product.price}</span>
+     
+           </p>`
+          )
+          $("#total b").empty().append(total)
+        }
+
 	const emailPattern = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}\b/;
 	
 
@@ -39,4 +53,6 @@ function() {
 			  document.getElementById(key).textContent = errors[key];
 			}
 		  }
+
+          
 		});

@@ -89,7 +89,7 @@ body {
   
   span.price {
     float: right;
-    color: grey;
+    color: rgb(36, 36, 36);
   }
   
   @media (max-width: 800px) {
