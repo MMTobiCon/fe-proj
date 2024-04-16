@@ -18,14 +18,18 @@ h1{
 
 .product_container{
     display: grid;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
     /* background-color: red;  */
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+
 }
 .product_card {
     position: relative;
-    width: 500px;
+    width: 380px;
     height: fit-content;
-    padding: 32px;
+    
+
     /* transition:  0.3s ease-in-out; */
     
 }
@@ -61,8 +65,10 @@ h1{
 }
 
 .product_card img{
-    width: 500px;
-    height: 500px;
+    width: 380px;
+    height: 180px;
+    display: grid;
+    gap: 1rem;
     /* height: 0pxc; */
     /* background-color: ; */
 }
@@ -74,6 +80,37 @@ h1{
     background-color: white;
     padding: 8px;
     width: 80%;
-    height: 10vh;
-    overflow: scroll;
+    height: 150px;
+    overflow:scroll;
+}
+.order-section{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.nav-logo{
+    height: 130px;
+    width: 250px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.order_item{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 52px;
+}
+
+@media (min-width: 600px) {
+    .product_card { grid-template-columns: repeat(2, 1fr);}
+    .product_container { grid-template-columns: repeat(2, 1fr);}
+    .product_card img { grid-template-columns: repeat(2, 1fr);}
+}
+@media (min-width: 900px) {
+    .product_card { grid-template-columns: repeat(3, 1fr);}
+    .product_container { grid-template-columns: repeat(3, 1fr);}
+    .product_card img { grid-template-columns: repeat(3, 1fr);}
 }

@@ -6,23 +6,94 @@
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="checkout.css">
     <script src="../index.js"></script>
+    <script src="checkout.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <title>Checkout</title>
 
 </head>
 <body>
-    <!-- Leave Nav Alone -->
-    <nav class="navigation-container">
-        <ul class="navigation-wrapper">
-            <li> <a href="/">Home</a> </li>
-          <li>
-            <a href="About.html">About</a>
-          </li>
-          <li ><a href="checkout.html">Cart-Logo</a></li>
-        </ul>
-      </nav>
-    
-    <!-- Leave Nav Alone -->
-    <h1>Checkout Page</h1>
-    <h1> Page</h1>
-</body>
-</html>
+  <section style="margin-left: 30px; margin-right: 30px;" ><img class="nav-logo" src="../Assets/Icons/condorslogo.png">
+    <hr style="border-color: aquamarine; border-width: 2px;">
+    <br>
+  <h2>Checkout Form</h2>
+  <br>
+  <div class="row">
+    <div class="col-75">
+      <div class="container">
+        <form id="checkout_form" action="../index.html">
+  
+          <div class="row">
+            <div class="col-50">
+              <h3>Billing Address</h3>
+              <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="">
+              <label id="email" for="email"><i class="fa fa-envelope"></i> Email</label>
+              <div id="email-error" class="error"></div>
+              <input type="text" id="email" name="email" placeholder="">
+              <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+              <input type="text" id="adr" name="address" placeholder="">
+              <label for="city"><i class="fa fa-institution"></i> City</label>
+              <input type="text" id="city" name="city" placeholder="">
+  
+              <div class="row">
+                <div class="col-50">
+                  <label for="state">State</label>
+                  <input type="text" id="state" name="state" placeholder="">
+                </div>
+                <div class="col-50">
+                  <label for="zip">Zip</label>
+                  <input type="text" id="zip" name="zip" placeholder="">
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-50">
+              <h3>Payment</h3>
+              <label for="fname">Accepted Cards</label>
+              <div class="icon-container">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+              </div>
+              <label for="cname">Name on Card</label>
+              <input type="text" id="cname" name="cardname" placeholder="">
+              <label id="credit_card" for="ccnum">Credit card number</label>
+              <span id="credit-error" class="error">*</span>
+              <input type="text" id="ccnum" name="cardnumber" placeholder="">
+              <label for="expmonth">CVV</label>
+              <input type="text" id="expmonth" name="expmonth" placeholder="">
+              <div class="row">
+                <div class="col-50">
+                  <label for="expyear">Exp month/year</label>
+                  <input type="text" id="expyear" name="expyear" placeholder="">
+                </div>
+               
+              </div>
+            </div>
+  
+          </div>
+          <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+          </label>
+          <input id="submit" type="submit" value="Continue to checkout" class="btn">
+        </form>
+      </div>
+    </div>
+    <div class="col-25">
+      <div class="container">
+        <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+        <div id="item_container">
+<!-- 
+          <p><a href="#">Item 1</a> <span class="price">$00</span></p>
+          <p><a href="#">Item 2</a> <span class="price">$00</span></p>
+          <p><a href="#">Item 3</a> <span class="price">$00</span></p>
+          <p><a href="#">Item 4</a> <span class="price">$00</span></p> -->
+        </div>
+        <hr>
+        <p id="total">Total <span class="price" style="color:black">$<b></b></span></p>
+      </div>
+    </div>
+  </div>
+  </body>
+  </html>
